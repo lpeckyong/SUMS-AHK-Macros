@@ -1,24 +1,25 @@
-﻿^h::{
-    Loop 74{
+^h::{
+    Loop 5{
     SetMouseDelay 0
     CoordMode "Mouse", "Window"
-    Sleep 500
+    delay_var := 400
+    Sleep delay_var
     Send "^c"
-    Sleep 100
+    Sleep delay_var
     clipboard_variable_thing := A_Clipboard
-    Sleep 100
+    Sleep delay_var
     Send "!{Tab}"
-    Sleep 100
+    Sleep delay_var
     MouseMove 1810, 504
-    Sleep 100
+    Sleep delay_var
     MouseClick
-    Sleep 100
+    Sleep delay_var
     SendText clipboard_variable_thing
     Sleep 1000
     Send "{Enter}"
-    Sleep 100
+    Sleep delay_var
     Send "!{Tab}"
-    Sleep 100
+    Sleep delay_var
     Send "{Down}"
     }
 }
